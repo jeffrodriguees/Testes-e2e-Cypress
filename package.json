@@ -1,0 +1,38 @@
+{
+  "name": "automamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:verify": "cypress verify",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypressout": "cypress open",
+    "cypressin": "cypress run",
+    "executa": "cypress run --spec cypress/e2e/executar/1_configuracoesIniciais.cy.js,cypress/e2e/executar/2_aluno.cy.js,cypress/e2e/executar/3_colaborador.cy.js,cypress/e2e/executar/4_professor.cy.js --browser chrome",
+    "executa2": "cypress run --spec cypress/e2e/executar/2_aluno.cy.js,cypress/e2e/executar/3_colaborador.cy.js,cypress/e2e/executar/4_professor.cy.js,cypress/e2e/executar/5_matriculaOnline.cy.js",
+    "qa": "cypress run --spec cypress/e2e/executar/1_configuracoesIniciais.cy.js,cypress/e2e/executar/2_aluno.cy.js,cypress/e2e/executar/3_colaborador.cy.js,cypress/e2e/executar/4_professor.cy.js,cypress/e2e/executar/5_matriculaOnline.cy.js --record --key bd27268b-c606-4009-91e1-ece629fd4b4e",
+    "iniciais": "cypress run --spec cypress/e2e/executar/1_configuracoesIniciais.cy.js  --browser chrome",
+    "aluno": "cypress run --spec cypress/e2e/executar/2_aluno.cy.js --browser chrome",
+    "colaborador": "cypress run --spec cypress/e2e/executar/3_colaborador.cy.js",
+    "colaboprof": "cypress run --spec cypress/e2e/executar/3_colaborador.cy.js,cypress/e2e/executar/4_professor.cy.js",
+    "aluprof": "cypress run --spec cypress/e2e/executar/2_aluno.cy.js,cypress/e2e/executar/4_professor.cy.js",
+    "professor": "cypress run --spec cypress/e2e/executar/4_professor.cy.js",
+    "matricula": "cypress run --spec cypress/e2e/executar/5_matriculaOnline.cy.js",
+    "cy:run-junit-reporter": "cypress run --reporter junit --reporter-options 'mochaFile=results/TEST-[hash].xml,toConsole=true' --spec cypress/e2e/executar/1_configuracoesIniciais.cy.js,cypress/e2e/executar/2_aluno.cy.js,cypress/e2e/executar/3_colaborador.cy.js,cypress/e2e/executar/4_professor.cy.js --browser chrome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "faker-br": "^0.4.1",
+    "faker-js": "^1.0.0",
+    "jest": "^29.5.0",
+    "junit-report-merger": "^6.0.3"
+  },
+  "devDependencies": {
+    "cypress": "11.2.0",
+    "cypress-wait-until": "^2.0.0",
+    "junit-report-merger": "^6.0.3"
+  }
+}

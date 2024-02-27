@@ -1,0 +1,12 @@
+{
+"usuario": "qa",
+"senha": "12095",
+"tenant": "111",
+"preMatricula": "184",
+"candidatoNome": faker.name.firstName() + " " + faker.name.lastName() + " " + faker.name.lastName(),
+"candidatoCPF": faker.br.cpf(), 
+"candidatoSus": '133040666100007',
+"candidatoNis": '133040666100007',
+"responsavelNome": faker.name.firstName() + " " + faker.name.lastName() + " " + faker.name.lastName(), 
+"id": faker.random.hexaDecimal()
+}
